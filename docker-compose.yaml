@@ -9,7 +9,7 @@ services:
       ## Traefik labels
     labels:
       - "traefik.enable=true"
-      - traefik.http.routers.frontend.rule=Host(`saas.civit.fr`)
+      - traefik.http.routers.frontend.rule=Host(`saas.civit.ovh`)
       - traefik.http.routers.frontend.tls=true
       - traefik.http.routers.frontend.tls.certresolver=prodresolver
       - traefik.http.routers.frontend.entrypoints=websecure
@@ -21,7 +21,7 @@ services:
     restart: always
     labels:
       - "traefik.enable=true"
-      - traefik.http.routers.apismartcve.rule=Host(`api.saas.civit.fr`)
+      - traefik.http.routers.apismartcve.rule=Host(`api.saas.civit.ovh`)
       - traefik.http.routers.aposmartcve.tls=true
       - traefik.http.routers.apismartcve.tls.certresolver=prodresolver
       - traefik.http.routers.apismartcve.entrypoints=websecure
