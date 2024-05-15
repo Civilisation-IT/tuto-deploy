@@ -16,7 +16,7 @@ services:
     networks:
       - proxy
   api:
-    image: rg.fr-par.scw.cloud/registry-cicd-example/saas-example-backend:v0.0.13
+    image: rg.fr-par.scw.cloud/registry-cicd-example/saas-example-backend:v0.0.5
     container_name: api-smartcve
     restart: always
     labels:
