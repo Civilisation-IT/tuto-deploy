@@ -9,10 +9,10 @@ services:
       ## Traefik labels
     labels:
       - "traefik.enable=true"
-      - traefik.http.routers.frontend.rule=Host(`saas.civit.ovh`)
-      - traefik.http.routers.frontend.tls=true
-      - traefik.http.routers.frontend.tls.certresolver=prodresolver
-      - traefik.http.routers.frontend.entrypoints=websecure
+      - traefik.http.routers.frontendsaas.rule=Host(`saas.civit.ovh`)
+      - traefik.http.routers.frontendsaas.tls=true
+      - traefik.http.routers.frontendsaas.tls.certresolver=prodresolver
+      - traefik.http.routers.frontendsaas.entrypoints=websecure
     networks:
       - proxy
   api:
