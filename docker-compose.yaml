@@ -22,7 +22,7 @@ services:
     labels:
       - "traefik.enable=true"
       - traefik.http.routers.apismartcve.rule=Host(`api.saas.civit.ovh`)
-      - traefik.http.routers.aposmartcve.tls=true
+      - traefik.http.routers.apismartcve.tls=true
       - traefik.http.routers.apismartcve.tls.certresolver=prodresolver
       - traefik.http.routers.apismartcve.entrypoints=websecure
     networks:
