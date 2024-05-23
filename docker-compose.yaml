@@ -3,7 +3,7 @@ version: '3'
 services:
 
   frontend:
-    image: rg.fr-par.scw.cloud/registry-cicd-example/saas-example-frontend:v0.0.8
+    image: rg.fr-par.scw.cloud/registry-cicd-example/saas-example-frontend:v0.0.9
     container_name: fronted-saas
     restart: always
       ## Traefik labels
